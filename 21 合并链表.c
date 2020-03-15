@@ -1,5 +1,6 @@
 /*21 合并链表*/
- 
+/*本题在写的时候还是遇到了bug，一定要定义头指针，因为进行链表数据内容比较时，将链表的数据进行了移位，如果不设定头指针，数据虽然存入链表L中，
+但是链表数据不能完全被显示*/
 struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2)
 {
     if(l1==NULL) return l2;
